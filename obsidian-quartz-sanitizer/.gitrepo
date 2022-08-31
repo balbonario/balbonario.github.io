@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/shinyben/obsidian-quartz-sanitizer
+	branch = main
+	commit = adcec806e3e051270623b8f2f744202f6f630b79
+	parent = 33e99f7f4064cee9ca5e2148e1f61d75d28eb14f
+	method = merge
+	cmdver = 0.4.3
