@@ -1,7 +1,3 @@
----
-title: "Linear Regression"
----
-
 Linear regression is a [[Function Approximation]] algorithm which assumes that your function is linear, i.e. $\hat Y = \beta X$ where $X \in \mathbb{R}^{p \times n}, \hat Y \in \mathbb{R}^{m \times n}, \beta \in \mathbb{R}^{m \times p}$, and $\beta$ is the matrix of coefficients to be fit.
 The method has $mp$ effective parameters.
 

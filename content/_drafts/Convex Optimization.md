@@ -1,5 +1,0 @@
----
-title: "Convex Optimization"
----
-
-#todo

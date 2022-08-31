@@ -1,0 +1,11 @@
+{
+  "spellcheckLanguages": [
+    "it",
+    "en-GB"
+  ],
+  "spellcheck": true,
+  "trashOption": "none",
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "attachments",
+  "newLinkFormat": "absolute"
+}

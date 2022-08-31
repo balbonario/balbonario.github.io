@@ -4,12 +4,12 @@ import re
 import string
 import random
 
-IN_DIR = Path(r'in')
-DEFAULT_DRAFT = True
+IN_DIR = Path(r'balbonario')
+DEFAULT_DRAFT = False
 
 # --- CHANGE THE ABOVE, NOTHING BELOW THIS LINE ---
 
-OUT_DIR = Path(r'out')
+OUT_DIR = Path(r'content')
 
 def sanitize_string(s):
     """
@@ -50,7 +50,7 @@ def sanitize_link(link, files, verbose=True):
     rel_link = None
     for file in files:
         if search_filename == file.stem:
-            rel_link = file.relative_to(OUT_DIR.parent)
+            rel_link = file.relative_to(OUT_DIR)
 
     # build Markdown link from Wikilink components and make all backslashes forward slashes
     sanitized_link = f'[{visible_portion}]' + f'({rel_link}{header})'
@@ -139,9 +139,10 @@ def sanitize_file_name(path):
     new_file_path = sanitized_relpath/(sanitize_string(path.stem) + '.md')
     os.makedirs(new_file_path.parent, exist_ok=True)
 
-    # make sure no two notes collide
-    if os.path.isfile(new_file_path):
-        new_file_path = new_file_path.parent/(''.join(random.choice(string.ascii_lowercase) for i in range(10)) + new_file_path.suffix)
+    # NOTE: We want to overwrite earlier runs of the script
+    # # make sure no two notes collide
+    # if os.path.isfile(new_file_path):
+    #     new_file_path = new_file_path.parent/(''.join(random.choice(string.ascii_lowercase) for i in range(10)) + new_file_path.suffix)
 
     with open(str(new_file_path), "w", encoding='utf-8') as f:
         with open(str(path), "r", encoding='utf-8') as f_old:

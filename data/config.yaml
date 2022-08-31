@@ -10,7 +10,8 @@ enableSPA: true
 enableFooter: true
 enableContextualBacklinks: true
 enableRecentNotes: false
-enableGitHubEdit: true
+enableGitHubEdit: false
+# The following link is wrong since we now use obsidian-quartz-sanitizer for filenames
 GitHubLink: https://github.com/balbonario/balbonario.github.io/tree/hugo/content
 enableSemanticSearch: false
 operandApiKey: "REPLACE-WITH-YOUR-OPERAND-API-KEY"

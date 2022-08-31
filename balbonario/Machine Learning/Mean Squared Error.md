@@ -1,7 +1,3 @@
----
-title: "Mean Squared Error"
----
-
 The mean squared error is a [[Loss Function]] typically used in classical [[Function Approximation]].
 Given $n$ datapoints $(x_i, y_i)$ and relative predictions made by a learning algorithm $\hat y_i = f(x_i)$, the loss function is defined as:
 $$\mathcal{L}(f) := \frac1n \sum_{i = 1}^n \left(y_i - f(x_i)\right)^2.$$
