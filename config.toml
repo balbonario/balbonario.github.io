@@ -3,7 +3,9 @@ languageCode = "en-us"
 googleAnalytics = "G-XYFD95KB4J"
 relativeURLs = false
 disablePathToLower = true
-ignoreFiles = []
+ignoreFiles = [
+    "/content/_drafts/*",
+]
 summaryLength = 20
 paginate = 25
 enableGitInfo = true

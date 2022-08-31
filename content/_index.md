@@ -1,15 +1,8 @@
 ---
-title: Balbonario
+title: "Balbonario"
 ---
 
-Welcome to the main page!
-This is just a *simple test* for the kind of rendering that we have.
-Can we render equations? $x^4$
-$$\alpha x = \beta$$
+Welcome to the *balbonario*, a collection of known facts in hard sciences and related fields that you can use as a fast reference or to explore those fields.
 
-Or highlight programming languages parts?
-
-```python {title="How to square a number"}
-def square(x):
-    return x**2
-```
+Some indices pages that you may want to start from are:
+- [[Classical Machine Learning]] about the methods and models of the basic parts of statistics and machine learning.
