@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_index.md",
+            "file": "Machine Learning/Regularization.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_index.md",
+                "file": "Machine Learning/Regularization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_index.md",
+                "file": "Machine Learning/Regularization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_index.md"
+                "file": "Machine Learning/Regularization.md"
               }
             }
           }
@@ -131,15 +131,15 @@
   },
   "active": "fb0c35abf6de813d",
   "lastOpenFiles": [
+    "Indices/Classical Machine Learning.md",
     "References/Hastie, Tibshirani, Friedman - The Elements of Statistical Learning.md",
+    "Machine Learning/The Curse of Dimensionality.md",
+    "Machine Learning/Bias-Variance Decomposition.md",
+    "Machine Learning/K-Nearest Neighbours.md",
+    "_index.md",
     "Machine Learning/Mean Squared Error.md",
     "Machine Learning/Loss Function.md",
     "Machine Learning/Linear Regression.md",
-    "Machine Learning/K-Nearest Neighbours.md",
-    "Machine Learning/Function Approximation.md",
-    "Indices/Classical Machine Learning.md",
-    "_drafts/Convex Optimization.md",
-    "_drafts/Sqrt Decomposition.md",
-    "_index.md"
+    "Machine Learning/Function Approximation.md"
   ]
 }

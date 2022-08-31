@@ -3,3 +3,5 @@ $$\hat y(x) := \frac1k \sum_{i \in N_k(x)} y_i$$
 where $N_k(x)$ represents the set of the $k$ neighbours of $x$, and which necessitates of a metric over $X$ to be specified.
 
 The number of effective parameters of the method is $n/k$, where $n$ is the number of datapoints, since the method essentially fits a mean to each grouping of $k$ elements, thus fitting $n/k$ means.
+
+This method presents us with a notable problem when going into high dimensions, since if we need $N$ points to have good classification on a single-dimensional $X$, we need $N^d$ points to have good classification on a $d$-dimensional $X$.

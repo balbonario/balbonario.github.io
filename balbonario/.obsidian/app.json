@@ -7,5 +7,5 @@
   "trashOption": "none",
   "alwaysUpdateLinks": true,
   "attachmentFolderPath": "attachments",
-  "newLinkFormat": "absolute"
+  "newLinkFormat": "shortest"
 }

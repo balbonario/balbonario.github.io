@@ -1,1 +1,1 @@
-#todo This is a well-known introductory book in the field of [[Classical Machine Learning]].
+A well-known introductory book in the field of [[Classical Machine Learning]], which talks about basic topics such as [[Bias-Variance Decomposition]], [[The Curse of Dimensionality]], and standard models such as [[Linear Regression]], [[K-Nearest Neighbours]].
