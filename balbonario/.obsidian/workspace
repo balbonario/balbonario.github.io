@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "fb0c35abf6de813d",
+        "id": "251ec87e966bfd1b",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Machine Learning/Regularization.md",
+            "file": "Machine Learning/Double Descent.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Machine Learning/Regularization.md",
+                "file": "Machine Learning/Double Descent.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Machine Learning/Regularization.md",
+                "file": "Machine Learning/Double Descent.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Machine Learning/Regularization.md"
+                "file": "Machine Learning/Double Descent.md"
               }
             }
           }
@@ -129,17 +129,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "fb0c35abf6de813d",
+  "active": "251ec87e966bfd1b",
   "lastOpenFiles": [
-    "Indices/Classical Machine Learning.md",
-    "References/Hastie, Tibshirani, Friedman - The Elements of Statistical Learning.md",
-    "Machine Learning/The Curse of Dimensionality.md",
+    "Machine Learning/Bias-Variance Tradeoff.md",
+    "Machine Learning/Double Descent.md",
     "Machine Learning/Bias-Variance Decomposition.md",
-    "Machine Learning/K-Nearest Neighbours.md",
-    "_index.md",
-    "Machine Learning/Mean Squared Error.md",
-    "Machine Learning/Loss Function.md",
-    "Machine Learning/Linear Regression.md",
-    "Machine Learning/Function Approximation.md"
+    "Machine Learning/Overfitting and Underfitting.md",
+    "Machine Learning/ROC Curve.md",
+    "Indices/Classical Machine Learning.md",
+    "Machine Learning/Confusion Matrix.md",
+    "Machine Learning/Stacking.md",
+    "Machine Learning/Boosting.md",
+    "Machine Learning/Bagging.md"
   ]
 }
