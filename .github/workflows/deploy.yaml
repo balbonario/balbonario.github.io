@@ -17,6 +17,8 @@ jobs:
         with:
           python-version: '3.10'
 
+      - run: pip install pyyaml
+      
       - run: python obsidian-quartz-sanitizer/main.py
       
       - name: Build Link Index

@@ -1,8 +1,10 @@
 from pathlib import Path
 import os
 import re
+import yaml
 import string
 import random
+import subprocess
 
 IN_DIR = Path(r'balbonario')
 DEFAULT_DRAFT = False
@@ -66,43 +68,38 @@ def escape_re_special_characters(s):
         s = re.sub(f'\{re_special_char}', f'\{re_special_char}', s)
     return s
 
-def add_frontmatter(s, title, default_draft=DEFAULT_DRAFT):
+def add_frontmatter(s, old_file_path, default_draft=DEFAULT_DRAFT):
     """
     given some note body s and title of note title,
     return the note body with frontmatter appended
 
     if default_draft, makes all notes drafts
     """
+    title = old_file_path.stem
+    lastUpdated = subprocess.run(f"git log -1 --pretty='format:%ci' '{old_file_path}'", capture_output=True, shell=True, check=True).stdout
     lines = s.split('\n')
-    # if there is no existent frontmatter
-    if not lines[0].startswith('---'):
-        if default_draft:
-            new_lines = f"""---
-title: {title}
-draft: true
----""".split('\n') + lines
-        else:
-            new_lines = f"""---
-title: {title}
----""".split('\n') + lines
-    else:
-        if default_draft:
-            lines.insert(1, 'draft: true')
-
-        has_title = False
-        for i, line in enumerate(lines):
-            # make all urls tags 'website' tags to make Hugo-compliant
-            if line.startswith('url:'):
-                lines[i] = line.replace('url: ', 'website: ')
-            # take all colons out of titles to make Hugo-compliant
-            if line.startswith('title:'):
-                has_title = True
-                lines[i] = 'title: ' + line.replace('title: ', '').replace(':', '').replace("'", '')
-        if not has_title:
-            lines.insert(1, f'title: {title}')
-
-        new_lines = lines
-    return '\n'.join(new_lines)
+    newfrontmatter = dict(title=title, lastmod=lastUpdated)
+    if default_draft:
+        newfrontmatter["draft"] = True
+    # If a frontmatter already exists we load it and join the two
+    if lines[0].startswith("---"):
+        oldfrontmatter = yaml.load(s.split("---\n")[1], Loader=yaml.UnsafeLoader)
+        newfrontmatter.update(oldfrontmatter)
+        lines = s.split("---\n")[2].split("\n")
+    # Now we normalize the frontmatter to make it Hugo-compliant
+    # All 'url' tags are renamed to 'website'
+    if "url" in newfrontmatter:
+        newfrontmatter["website"] = newfrontmatter["url"]
+        del newfrontmatter["url"]
+    # Also take all colons out of 'title'
+    newfrontmatter["title"] = newfrontmatter["title"].replace(":", "").replace("'", "")
+    # Now we can add our joined frontmatter on top of it
+    lines = [
+        "---",
+        *yaml.dump(newfrontmatter).split("\n"),
+        "---",
+    ] + lines
+    return '\n'.join(lines)
 
 def sanitize_file_contents(path, files):
     """
@@ -148,7 +145,7 @@ def sanitize_file_name(path):
         with open(str(path), "r", encoding='utf-8') as f_old:
             old_text = f_old.read()
 
-        frontmattered_text = add_frontmatter(old_text, path.stem)
+        frontmattered_text = add_frontmatter(old_text, path)
         f.write(frontmattered_text)
 
 
