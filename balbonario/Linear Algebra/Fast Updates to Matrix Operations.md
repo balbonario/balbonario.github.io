@@ -22,3 +22,6 @@ The formula allows to compute the determinant of a sum of an invertible matrix $
 > 
 > In the case where we have $U, V$ as two $n \times m$ matrices and $W$ an additional $m \times m$ invertible matrix we have the identity:
 > $$\text{det}(A + UWV^T) = \text{det}(W^{-1} + V^T A^{-1} U)\ \text{det}(W)\ \text{det}(A).$$
+
+#### Others
+- [A Stable and Efficient Algorithm for the Rank-one Modification of the Symmetric Eigenproblem](http://www.cs.yale.edu/publications/techreports/tr916.pdf) [(Archived)](https://web.archive.org/web/20220901/http://www.cs.yale.edu/publications/techreports/tr916.pdf)
