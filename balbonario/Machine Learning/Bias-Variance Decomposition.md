@@ -15,3 +15,6 @@ To get the lowest errors we would like to reduce both the bias and the variance,
 
 For a fixed model of the data (e.g. [[Linear Regression]]) we can analytically compute the minimum MSE for different settings of the number of parameters of the fit (i.e. the number of coefficients for linear regression).
 If one does this, it can be seen that there is a [[Bias-Variance Tradeoff]], i.e. one has to acquire a bit of variance if we want to decrease the bias and viceversa.
+
+#### Deepenings
+- [A Unified Bias-Variance Decomposition](https://homes.cs.washington.edu/~pedrod/bvd.pdf) [(Archived)](https://web.archive.org/web/20220902/https://homes.cs.washington.edu/~pedrod/bvd.pdf)

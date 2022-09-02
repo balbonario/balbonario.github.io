@@ -1,4 +1,4 @@
 #todo 
 
 ## Intermediate Tricks
-- [[Sqrt Decomposition]]
+- [[Square Root Decomposition]]

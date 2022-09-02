@@ -7,8 +7,13 @@
         "id": "ea2ab71fd6c2fad6",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Machine Learning/Linear Regression.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          }
         }
       }
     ],
@@ -36,7 +41,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "maximum likelihood",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,6 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Machine Learning/Linear Regression.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Machine Learning/Linear Regression.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,7 +117,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Machine Learning/Linear Regression.md"
+              }
             }
           }
         ]
@@ -122,15 +131,15 @@
   },
   "active": "ea2ab71fd6c2fad6",
   "lastOpenFiles": [
-    "Linear Algebra/Fast Updates to Matrix Operations.md",
-    "Machine Learning/Double Descent.md",
-    "Machine Learning/Bagging.md",
-    "Machine Learning/Boosting.md",
-    "Machine Learning/Empirical Risk Minimization.md",
     "Machine Learning/Regularization.md",
-    "Machine Learning/Confusion Matrix.md",
-    "Machine Learning/Bias-Variance Tradeoff.md",
     "Machine Learning/Bias-Variance Decomposition.md",
-    "Machine Learning/Linear Regression.md"
+    "Algorithms and Data Structures/Segment Trees.md",
+    "Algorithms and Data Structures/Square Root Decomposition.md",
+    "Machine Learning/Categorical Cross-Entropy.md",
+    "Statistical Learning Theory/Maximum Likelihood Estimation.md",
+    "Machine Learning/The Curse of Dimensionality.md",
+    "Statistical Learning Theory/Concentration Inequalities.md",
+    "Machine Learning/Kernel Methods.md",
+    "Machine Learning/K-Nearest Neighbours.md"
   ]
 }
